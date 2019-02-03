@@ -1,6 +1,7 @@
 import scrapy
 
 
+
 class InformaticsCoursesSpider(scrapy.Spider):
     name = "informatics"
     start_urls = [
@@ -19,17 +20,47 @@ class InformaticsCoursesSpider(scrapy.Spider):
             # single course will contain data regarding one course
             single_course = {}
             for i, info in enumerate(course_raw.xpath('./td')):
-                # The first item will contain both course name and href while
-                # other items will contain only text
+                # TABLE being parse
+                #  ------------------------------------------------------------------------------
+                # | Course URL         | EUCLID Code | Acronym | AI | GC | CS | SE | Level | ... | - TITLES
+                #  ------------------------------------------------------------------------------
+                # | Advanced Databases | INFR11011   | ADBS    |    |    | CS |    | 10    | ... | - COURSE
+                # ...
+
+                # First column is course name, but it's called Course URL, gonna rename to courseName
+                # Second column is both EUCLID Code and Course URL, thus gonna use Course URL form it
+                # Other items will contain correct data
                 if i == 0:
                     single_course['courseName'] = info.css('::text').extract_first()
-                elif i == 1:
-                    single_course[titles[0]] = info.css('a').xpath('@href').extract_first()
-                    single_course[titles[1]] = info.css('::text').extract_first()
                 else:
                     single_course[titles[i]] = info.css('::text').extract_first()
 
-            yield single_course
+                    if i == 1:
+                        drps_page = info.css('a').xpath('@href').extract_first()
+                        single_course[titles[0]] = drps_page
+
+                        if drps_page:
+                            request = response.follow(drps_page, self.parse_drps)
+                            request.meta['course'] = single_course
+                            yield request
+
+    def extract_td_text(self, node):
+        return '\n'.join([text.extract() for text in node.css('td::text')]).strip()
+
+    def parse_drps(self, response):
+        inf = response.css('body > table.content > tr > td > table > tr > td')
+        single_course = response.meta['course']
+
+        for i, c in enumerate(inf):
+            cell_name = self.extract_td_text(c)
+
+            if cell_name == 'Summary':
+                single_course['Summary'] = self.extract_td_text(inf[i + 1])
+            elif cell_name == 'Course description':
+                single_course['Description'] = self.extract_td_text(inf[i + 1])
+
+        yield single_course
+
 
 # 'courseName' : info.css('a::text').extract_first(),
 # 'courseURL' : info.css('a').xpath('@href').extract_first(),
@@ -47,3 +78,7 @@ class InformaticsCoursesSpider(scrapy.Spider):
 # 'examDiet' : info.css('td::text').extract_first(),
 # 'workExamRatio' : info.css('td::text').extract_first(),
 # 'lecturerCoordinator' : info.css('a::text').extract_first()
+
+
+
+
