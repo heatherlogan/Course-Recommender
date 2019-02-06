@@ -19,7 +19,7 @@ def main():
         if c[0].startswith('INF'):
             print(c[0], c[-2])
 
-    with open('average.txt', 'w') as f:
+    with open('../average.txt', 'w') as f:
         f.write('INFCODE\t' + 'AVERAGE\n')
 
         for c in course:
