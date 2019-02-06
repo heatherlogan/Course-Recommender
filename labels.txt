@@ -1,0 +1,118 @@
+INFR09042	Artificial Intelligence
+INFR09046	Architecture
+INFR09028	Natural Language Processing
+INFR09019	Artificial Intelligence
+INFR09047	Architecture
+INFR09032	Software Engineering
+INFR10052	Algorithms and Data Structures
+INFR10054	Artificial Intelligence
+INFR10074	Networks
+INFR10067	Security
+INFR10070	Data Science
+INFR10065	Programming Languages
+INFR10069	Machine Learning
+INFR10059	Theory of Computation
+INFR10022	Ethics
+INFR10057	Software Engineering
+INFR11125	Natural Language Processing
+INFR11011	Data Science
+INFR11020	Algorithms and Data Structures
+INFR11033	Artificial Intelligence
+INFR11144	Security
+INFR11032	Programming Languages
+INFR11067	Graphics
+INFR11088	Software Engineering
+INFR11017	Human Computer
+INFR11131	Security
+INFR11099	Theory of Computation
+INFR11132	Machine Learning
+INFR11130	Machine Learning
+INFR11023	Parallel Programming
+INFR11150	Internet of Things
+INFR11089	Theory of Computation
+INFR11038	Software Engineering
+INFR11098	Security
+INFR11124	Networks
+INFR11145	Data Science
+INFR11114	Programming Languages
+INFR11169	Parallel Programming
+INFR11170	Parallel Programming
+INFR11122	Data Science
+INFR11031	Artificial Intelligence
+INFR11101	Programming Languages
+INFR11156	Algorithms and Data Structures
+INFR11180	Artificial Intelligence
+INFR11160	Misc.
+INFR11005	Misc.
+INFR11094	Misc.
+INFR11095	Misc.
+INFR11036	Artificial Intelligence
+INFR11102	Theory of Computation
+INFR11111	Theory of Computation
+INFR08022	Theory of Computation
+INFR11171	Data Science
+INFR11007	Data Science
+INFR11090	Artificial Intelligence
+INFR11179	Parallel Programming
+INFR08023	Theory of Computation
+INFR11176	Data Science
+INFR11175	Architecture
+INFR11140	Artificial Intelligence
+INFR08020	Artificial Intelligence
+INFR08015	Data Science
+INFR08025	Theory of Computation
+INFR08014	Programming Languages
+INFR08008	Natural Language Processing
+INFR08009	Algorithms and Data Structures
+INFR08018	Architecture
+INFR08019	Software Engineering
+INFR08010	Artificial Intelligence
+INFR09051	Misc.
+INFR11147	Misc.
+INFR11136	Misc.
+INFR11146	Internet of Things
+INFR09021	Programming Languages
+INFR11138	Data Science
+INFR11163	Parallel Programming
+INFR11079	Misc.
+INFR11161	Misc.
+INFR11157	Natural Language Processing
+INFR11162	Misc.
+INFR11035	Misc.
+INFR11174	Algorithms and Data Structures
+INFR11168	Parallel Programming
+INFR11082	Misc.
+INFR11167	Misc.
+INFR11108	Misc.
+INFR11134	Theory of Computation
+INFR11177	Misc.
+INFR11173	Misc.
+INFR11010	Artificial Intelligence
+INFR11186	Artificial Intelligence
+INFR11092	Artificial Intelligence
+INFR10064	Software Engineering
+INFR11172	Software Engineering
+INFR11141	Human Computer
+INFR11178	Parallel Programming
+INFR11158	Security
+INFR11118	Artificial Intelligence
+INFR11184	Parallel Programming
+INFR11183	Data Science
+INFR11165	Misc.
+INFR11109	Misc.
+INFR11097	Misc.
+INFR11107	Misc.
+INFR11106	Misc.
+INFR11077	Misc.
+INFR11093	Misc.
+INFR10051	Misc.
+INFR11152	Machine Learning
+INFR11182	Machine Learning
+INFR11153	Artificial Intelligence
+INFR09050	Programming Languages
+INFR11155	Artificial Intelligence
+INFR10044	Misc.
+INFR11166	Misc.
+INFR11164	Misc.
+INFR11185	Misc.
+INFR11159	Misc.
