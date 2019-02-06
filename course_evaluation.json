@@ -1,0 +1,457 @@
+[
+    {
+        "course_code": "INFR08022",
+        "polarity": 0.17425759058293308,
+        "subjectivity": 0.425567869471979
+    },
+    {
+        "course_code": "INFR08020",
+        "polarity": 0.08916750538019194,
+        "subjectivity": 0.4211769235463266
+    },
+    {
+        "course_code": "INFR08012",
+        "polarity": 0.1329623180317625,
+        "subjectivity": 0.3624149859913749
+    },
+    {
+        "course_code": "INFR08015",
+        "polarity": 0.16620450458829364,
+        "subjectivity": 0.3706895874669312
+    },
+    {
+        "course_code": "INFR08013",
+        "polarity": 0.20499420483795483,
+        "subjectivity": 0.35382224757224756
+    },
+    {
+        "course_code": "INFR08014",
+        "polarity": 0.17832702020202024,
+        "subjectivity": 0.40790853038836916
+    },
+    {
+        "course_code": "INFR08008",
+        "polarity": 0.2313330611468909,
+        "subjectivity": 0.43958432032900124
+    },
+    {
+        "course_code": "INFR08009",
+        "polarity": 0.1872726731601732,
+        "subjectivity": 0.4462663780663781
+    },
+    {
+        "course_code": "INFR08018",
+        "polarity": 0.15740924465062392,
+        "subjectivity": 0.37621595332083846
+    },
+    {
+        "course_code": "INFR08019",
+        "polarity": 0.1250426887926888,
+        "subjectivity": 0.435837542087542
+    },
+    {
+        "course_code": "INFR08010",
+        "polarity": 0.2189311503061503,
+        "subjectivity": 0.365436702936703
+    },
+    {
+        "course_code": "INFR08023",
+        "polarity": 0.19365706912135489,
+        "subjectivity": 0.4215648597434312
+    },
+    {
+        "course_code": "INFR09043",
+        "polarity": 0.10095457122242837,
+        "subjectivity": 0.3810419488863367
+    },
+    {
+        "course_code": "INFR09042",
+        "polarity": 0.1546064814814815,
+        "subjectivity": 0.47821759259259267
+    },
+    {
+        "course_code": "INFR09009",
+        "polarity": 0.11666666666666665,
+        "subjectivity": 0.225
+    },
+    {
+        "course_code": "INFR09046",
+        "polarity": 0.26089285714285715,
+        "subjectivity": 0.5120833333333333
+    },
+    {
+        "course_code": "INFR09044",
+        "polarity": 0.22751577589077585,
+        "subjectivity": 0.3806633921633922
+    },
+    {
+        "course_code": "INFR09028",
+        "polarity": 0.24935751748251755,
+        "subjectivity": 0.5150084175084175
+    },
+    {
+        "course_code": "INFR10069",
+        "polarity": 0.19290443495087992,
+        "subjectivity": 0.4588176050079718
+    },
+    {
+        "course_code": "INFR11152",
+        "polarity": 0.12925624226963514,
+        "subjectivity": 0.3777718511647083
+    },
+    {
+        "course_code": "INFR11153",
+        "polarity": 0.0030096153846153827,
+        "subjectivity": 0.44852564102564096
+    },
+    {
+        "course_code": "INFR09047",
+        "polarity": 0.072734375,
+        "subjectivity": 0.4300086805555556
+    },
+    {
+        "course_code": "INFR09045",
+        "polarity": 0.1375,
+        "subjectivity": 0.33999999999999997
+    },
+    {
+        "course_code": "INFR09032",
+        "polarity": 0.16566701668040956,
+        "subjectivity": 0.42077377421226625
+    },
+    {
+        "course_code": "INFR10052",
+        "polarity": 0.12266817612212348,
+        "subjectivity": 0.4024594314067998
+    },
+    {
+        "course_code": "INFR10054",
+        "polarity": 0.17345410628019325,
+        "subjectivity": 0.5534814792695226
+    },
+    {
+        "course_code": "INFR10067",
+        "polarity": 0.1968621615312792,
+        "subjectivity": 0.5187955182072829
+    },
+    {
+        "course_code": "INFR10065",
+        "polarity": 0.0,
+        "subjectivity": 0.0
+    },
+    {
+        "course_code": "INFR10074",
+        "polarity": 0.032136752136752114,
+        "subjectivity": 0.5006837606837606
+    },
+    {
+        "course_code": "INFR10070",
+        "polarity": 0.21122239475500337,
+        "subjectivity": 0.42584282263630086
+    },
+    {
+        "course_code": "INFR10061",
+        "polarity": 0.2858032106782107,
+        "subjectivity": 0.41429310966810967
+    },
+    {
+        "course_code": "INFR10059",
+        "polarity": 0.19479166666666667,
+        "subjectivity": 0.46672619047619046
+    },
+    {
+        "course_code": "INFR10022",
+        "polarity": 0.1701140873015873,
+        "subjectivity": 0.4091771384479717
+    },
+    {
+        "course_code": "INFR10057",
+        "polarity": 0.22623796296296297,
+        "subjectivity": 0.4891402998236332
+    },
+    {
+        "course_code": "INFR10044",
+        "polarity": 0.01105125661375661,
+        "subjectivity": 0.36741723356009065
+    },
+    {
+        "course_code": "INFR10005",
+        "polarity": 0.2922222222222222,
+        "subjectivity": 0.2594444444444445
+    },
+    {
+        "course_code": "INFR10051",
+        "polarity": 0.20555555555555557,
+        "subjectivity": 0.2611111111111111
+    },
+    {
+        "course_code": "INFR11011",
+        "polarity": 0.35666666666666663,
+        "subjectivity": 0.5933333333333334
+    },
+    {
+        "course_code": "INFR11020",
+        "polarity": 0.22731481481481483,
+        "subjectivity": 0.44830246913580246
+    },
+    {
+        "course_code": "INFR11069",
+        "polarity": 0.04004629629629629,
+        "subjectivity": 0.2969907407407408
+    },
+    {
+        "course_code": "INFR11033",
+        "polarity": 0.1857222222222222,
+        "subjectivity": 0.4598888888888889
+    },
+    {
+        "course_code": "INFR11144",
+        "polarity": 0.1452808302808303,
+        "subjectivity": 0.4235347985347986
+    },
+    {
+        "course_code": "INFR11032",
+        "polarity": 0.01388888888888889,
+        "subjectivity": 0.31319444444444444
+    },
+    {
+        "course_code": "INFR11067",
+        "polarity": 0.03411458333333332,
+        "subjectivity": 0.3822916666666667
+    },
+    {
+        "course_code": "INFR11021",
+        "polarity": 0.15980452674897122,
+        "subjectivity": 0.43809670781893006
+    },
+    {
+        "course_code": "INFR11049",
+        "polarity": -0.007291666666666666,
+        "subjectivity": 0.1416666666666667
+    },
+    {
+        "course_code": "INFR11022",
+        "polarity": 0.10684523809523808,
+        "subjectivity": 0.28095238095238095
+    },
+    {
+        "course_code": "INFR11088",
+        "polarity": 0.15013627819548872,
+        "subjectivity": 0.385394536019536
+    },
+    {
+        "course_code": "INFR11017",
+        "polarity": 0.23232142857142854,
+        "subjectivity": 0.44021367521367516
+    },
+    {
+        "course_code": "INFR11131",
+        "polarity": 0.06997341880341879,
+        "subjectivity": 0.4725604517704518
+    },
+    {
+        "course_code": "INFR11099",
+        "polarity": 0.11990740740740742,
+        "subjectivity": 0.5083333333333332
+    },
+    {
+        "course_code": "INFR11132",
+        "polarity": 0.18799545605466655,
+        "subjectivity": 0.44845614302851144
+    },
+    {
+        "course_code": "INFR11130",
+        "polarity": 0.22965718666621449,
+        "subjectivity": 0.4436090362569529
+    },
+    {
+        "course_code": "INFR11062",
+        "polarity": 0.06624225245653818,
+        "subjectivity": 0.417600812547241
+    },
+    {
+        "course_code": "INFR11061",
+        "polarity": 0.0833673574368019,
+        "subjectivity": 0.5169018959435626
+    },
+    {
+        "course_code": "INFR11024",
+        "polarity": 0.020833333333333336,
+        "subjectivity": 0.18159722222222222
+    },
+    {
+        "course_code": "INFR11082",
+        "polarity": 0.17747474747474745,
+        "subjectivity": 0.25843434343434346
+    },
+    {
+        "course_code": "INFR11023",
+        "polarity": 0.3375694444444444,
+        "subjectivity": 0.49746527777777777
+    },
+    {
+        "course_code": "INFR11150",
+        "polarity": 0.27860750360750364,
+        "subjectivity": 0.47928932178932176
+    },
+    {
+        "course_code": "INFR11089",
+        "polarity": 0.040566893424036285,
+        "subjectivity": 0.3675283446712018
+    },
+    {
+        "course_code": "INFR11038",
+        "polarity": 0.24800505050505056,
+        "subjectivity": 0.5098484848484849
+    },
+    {
+        "course_code": "INFR11098",
+        "polarity": 0.10323611111111111,
+        "subjectivity": 0.3674444444444444
+    },
+    {
+        "course_code": "INFR11124",
+        "polarity": 0.18012820512820513,
+        "subjectivity": 0.29743589743589743
+    },
+    {
+        "course_code": "INFR11145",
+        "polarity": 0.14395833333333333,
+        "subjectivity": 0.24402777777777782
+    },
+    {
+        "course_code": "INFR11113",
+        "polarity": 0.0314423076923077,
+        "subjectivity": 0.4351752136752137
+    },
+    {
+        "course_code": "INFR11114",
+        "polarity": 0.19102092352092354,
+        "subjectivity": 0.4282359307359307
+    },
+    {
+        "course_code": "INFR09021",
+        "polarity": 0.26545180375180377,
+        "subjectivity": 0.49819437229437225
+    },
+    {
+        "course_code": "INFR09050",
+        "polarity": 0.2128453364817001,
+        "subjectivity": 0.3833643250688705
+    },
+    {
+        "course_code": "INFR11125",
+        "polarity": 0.187339423191249,
+        "subjectivity": 0.434851755246418
+    },
+    {
+        "course_code": "INFR11031",
+        "polarity": -0.04583333333333334,
+        "subjectivity": 0.0875
+    },
+    {
+        "course_code": "INFR11151",
+        "polarity": 0.21300000000000002,
+        "subjectivity": 0.418875
+    },
+    {
+        "course_code": "INFR11016",
+        "polarity": 0.07602441338854384,
+        "subjectivity": 0.4191274154589374
+    },
+    {
+        "course_code": "INFR11005",
+        "polarity": 0.155,
+        "subjectivity": 0.3705555555555556
+    },
+    {
+        "course_code": "INFR11128",
+        "polarity": 0.29188888888888886,
+        "subjectivity": 0.5508888888888889
+    },
+    {
+        "course_code": "INFR11036",
+        "polarity": 0.16838613406795225,
+        "subjectivity": 0.4577685950413223
+    },
+    {
+        "course_code": "INFR11094",
+        "polarity": 0.1690792540792541,
+        "subjectivity": 0.4325291375291375
+    },
+    {
+        "course_code": "INFR11095",
+        "polarity": 0.21727272727272728,
+        "subjectivity": 0.3009090909090909
+    },
+    {
+        "course_code": "INFR11007",
+        "polarity": 0.24949999999999997,
+        "subjectivity": 0.440625
+    },
+    {
+        "course_code": "INFR11090",
+        "polarity": 0.27555555555555555,
+        "subjectivity": 0.24027777777777773
+    },
+    {
+        "course_code": "INFR11140",
+        "polarity": 0.09857954545454545,
+        "subjectivity": 0.31107954545454547
+    },
+    {
+        "course_code": "INFR11136",
+        "polarity": 0.18522660818713452,
+        "subjectivity": 0.3888779239766082
+    },
+    {
+        "course_code": "INFR11147",
+        "polarity": 0.016822916666666656,
+        "subjectivity": 0.47245659722222216
+    },
+    {
+        "course_code": "INFR11138",
+        "polarity": 0.14595454545454545,
+        "subjectivity": 0.29484848484848486
+    },
+    {
+        "course_code": "INFR11008",
+        "polarity": 0.2016298185941043,
+        "subjectivity": 0.56937358276644
+    },
+    {
+        "course_code": "INFR11035",
+        "polarity": 0.14930555555555555,
+        "subjectivity": 0.4398148148148148
+    },
+    {
+        "course_code": "INFR11108",
+        "polarity": 0.15069444444444444,
+        "subjectivity": 0.3127314814814815
+    },
+    {
+        "course_code": "INFR11134",
+        "polarity": 0.3190300374779541,
+        "subjectivity": 0.5135278880070547
+    },
+    {
+        "course_code": "INFR11010",
+        "polarity": 0.1651135008996851,
+        "subjectivity": 0.43478480656770135
+    },
+    {
+        "course_code": "INFR11142",
+        "polarity": 0.18930555555555553,
+        "subjectivity": 0.36444444444444446
+    },
+    {
+        "course_code": "INFR11092",
+        "polarity": 0.2652218614718615,
+        "subjectivity": 0.43079816017316014
+    },
+    {
+        "course_code": "INFR11141",
+        "polarity": 0.19740787037037044,
+        "subjectivity": 0.43825462962962974
+    }
+]
