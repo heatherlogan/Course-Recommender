@@ -1,0 +1,25 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: main.app
+
+- url: /recommend
+  script: main.app
+
+- url: /search
+  static_dir: main.app
+
+skip_files:
+- google-cloud-sdk
+- venv
+- lib/scipy/.dylibs/libopenblasp-r0.3.0.dev.dylib
+- lib/numpy/.dylibs/libopenblasp-r0.3.5.dev.dylib
+
+libraries:
+- name: flask
+  version: latest
+- name: ssl
+  version: latest

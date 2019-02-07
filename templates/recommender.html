@@ -1,0 +1,290 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Recommender</title>
+
+</head>
+<body>
+
+<!-- Page Header -->
+
+{% block content %}
+
+    <header class="page-header">
+        <div class="container" align="center">
+            <h1 style="padding-top:100px; padding-bottom: 20px; font-size: 50px"> Inf Course Recommender </h1>
+            <hr class="star-light">
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div id="course select area" class="col-lg-6" align="center">
+
+                <h5 style="padding-top:10px; padding-left: 20px; padding-right:20px">
+                    Select up to 5 courses you have previously taken and
+                    rate how much you enjoyed each
+                </h5>
+                <h6 style="padding-bottom: 20px">(1: did not enjoy 5: really enjoyed)</h6>
+
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            Courses
+                        </a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+
+                            <div class="form-group" style="width: 85%">
+                                <select type="select" class="form-control" name="course_1" required>
+                                    <option value="" hidden>Select Course</option>
+                                    {% for course in courses %}
+                                        <option value="{{ course.Code }}">{{ course.Name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+
+                            <div class="form-group" style="width: 10%">
+                                <select type="select" class="form-control" name="course_1_score" required>
+                                    <option value="" hidden>-</option>
+                                    {% for s in scores %}
+                                        <option value="{{ s }}">{{ s }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="form-group" style="width: 85%">
+                                <select type="select" class="form-control" name="course_2">
+                                    <option value="" hidden>Select Course</option>
+                                    {% for course in courses %}
+                                        <option value="{{ course.Code }}">{{ course.Name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group" style="width: 10%">
+                                <select type="select" class="form-control" name="course_2_score">
+                                    <option value="" hidden>-</option>
+                                    {% for s in scores %}
+                                        <option value="{{ s }}">{{ s }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="form-group" style="width: 85%">
+
+                                <select type="select" class="form-control" name="course_3">
+                                    <option value="" hidden>Select Course</option>
+                                    {% for course in courses %}
+                                        <option value="{{ course.Code }}">{{ course.Name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group" style="width: 10%">
+                                <select type="select" class="form-control" name="course_3_score">
+                                    <option value="" hidden>-</option>
+                                    {% for s in scores %}
+                                        <option value="{{ s }}">{{ s }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="form-group" style="width: 85%">
+
+                                <select type="select" class="form-control" name="course_4">
+                                    <option value="" hidden>Select Course</option>
+                                    {% for course in courses %}
+                                        <option value="{{ course.Code }}">{{ course.Name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group" style="width: 10%">
+                                <select type="select" class="form-control" name="course_4_score">
+                                    <option value="" hidden>-</option>
+                                    {% for s in scores %}
+                                        <option value="{{ s }}">{{ s }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="form-group" style="width: 85%">
+                                <select type="select" class="form-control" name="course_5">
+                                    <option value="" hidden>Select Course</option>
+                                    {% for course in courses %}
+                                        <option value="{{ course.Code }}">{{ course.Name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group" style="width: 10%">
+                                <select type="select" class="form-control" name="course_5_score">
+                                    <option value="" hidden>-</option>
+                                    {% for s in scores %}
+                                        <option value="{{ s }}">{{ s }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                        </li>
+
+                    </div>
+            </div>
+
+
+            <div class="col-lg-6" align="center" style="padding: 20px">
+                <h5 style="padding:20px">
+                    Which year of study are you entering?
+                </h5>
+
+                <div class="form-group" style="width:20%">
+
+                    <select type="select" class="form-control" name="yr" required>
+                        <option value="" hidden>-</option>
+                        {% for y in years %}
+                            <option value="{{ y }}">{{ y }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <h5 style="padding:20px">
+                    Select up to 3 areas of Informatics you are interested in.
+                </h5>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Interests
+                    </a>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="form-group"  style="width: 100%"  >
+                            <select type="select" class="form-control" name="interest_1" >
+                                <option value="" hidden>Select Interest</option>
+                                {% for i in interests %}
+                                    <option value="{{ i }}">{{ i }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="form-group" style="width: 100%" >
+                            <select type="select" class="form-control" name="interest_2">
+                                <option value="" hidden>Select Interest</option>
+                                {% for i in interests %}
+                                    <option value="{{ i }}">{{ i }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="form-group" align="center"  style="width: 100%" >
+                            <select type="select" class="form-control" name="interest_3">
+                                <option value="" hidden>Select Interest</option>
+                                {% for i in interests %}
+                                    <option value="{{ i }}">{{ i }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </li>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="padding:20px" align="center" style="align-content: center">
+            <input class="btn btn-primary" type="submit" value="Submit" style="width: 200px">
+        </div>
+
+        <div id="results_area">
+            <div align="center">
+                <h1> Recommended Courses </h1>
+            </div>
+
+            {% for rec in recommendations %}
+
+                <div class="card border-primary mb-3">
+                    <div class="card-header">{{ rec.num }}. {{ rec.code }}</div>
+                    <div class="card-body">
+                        <h4 class="card-title"><h3>{{ rec.name }}</h3></h4>
+                        <div class="row"></div>
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <p class="card-text">Relevant Area: {{ rec.area }}</p>
+                                <p class="card-text">Level: {{ rec.level }} </p>
+                                <p class="card-text">Credits: {{ rec.credits }}</p>
+                                <p class="card-text">Normal Delivery: {{ rec.delivery }}</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="card-text">Coursework/Exam Distribution: {{ rec.cwexam }}</p>
+                                <p class="card-text">Average Mark: {{ rec.average }} %</p>
+                                <p class="card-text">Lecturer: {{ rec.coordinator }}</p>
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                        <p class="card-text"><b>Course Summary:</b> {{ rec.summary }} </class>
+                        <p class="card-text">DRPS: <a href="{{ rec.url }}">{{ rec.url }}</a></p>
+
+                        {% if not rec.feedback == "Not Available" %}
+                            <!-- MODAL-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                <a> View Feedback </a>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalLabel">
+
+                                <div class="modal-dialog" role="document">
+
+                                    <div class="modal-content" >
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">{{ rec.name }} Feedback </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            {% for f in rec.feedback %}
+                                                <ul class="list-group">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    {{ f }}
+                                                </li>
+                                            {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        {% else %}
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary">
+                                <a> Feedback Unavailable </a>
+                            </button>
+                        {% endif %}
+
+
+                </div>
+                </div>
+            {% endfor %}
+    </div>
+    </div>
+{% endblock content %}
+</body>
+</html>

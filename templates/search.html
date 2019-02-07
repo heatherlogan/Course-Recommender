@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Search</title>
+
+</head>
+<body>
+
+<!-- Page Header -->
+
+{% block content %}
+
+    <header class="page-header">
+        <div class="container" align="center">
+            <h1 style="padding-top:100px; padding-bottom: 50px; font-size: 50px"> Inf Course Search </h1>
+            <hr class="star-light">
+        </div>
+    </header>
+
+    {% for post in post %}
+        <h1>{{ post.course }}</h1>
+        <p>{{ post.code }}, {{ post.area }}</p>
+    {% endfor %}
+
+    <div class="container" align="center">
+        <form method="POST">
+            <div style="padding:20px"style="width: 70%">
+                <input class="col-form-label col-form-label-lg" placeholder="Search.." name="text" type="text"
+                       style="width: 100% "/>
+            </div>
+            <div style="padding: 20px">
+                <input class="btn btn-primary" type="submit" value="Submit" style="width:300px">
+            </div>
+        </form>
+
+        <!--{% for para in text %}-->
+            <!--<p>{{para}}</p>-->
+            <!--{% endfor %}-->
+
+        <div align="left">
+
+            {% for rec in objs %}
+
+                <div class="card border-primary mb-3" >
+                    <div class="card-header">{{ rec.num }}. {{ rec.code }}</div>
+                    <div class="card-body">
+                        <h4 class="card-title"><h3>{{ rec.name }}</h3></h4>
+                        <div class="row"></div>
+                        <div class="row" style="padding: 20px;">
+                            <div class="col-6">
+                                <p class="card-text">Relevant Area: {{ rec.area }}</p>
+                                <p class="card-text">Level: {{ rec.level }} </p>
+                                <p class="card-text">Credits: {{ rec.credits }}</p>
+                                <p class="card-text">Normal Delivery: {{ rec.delivery }}</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="card-text">Coursework/Exam Distribution: {{ rec.cwexam }}</p>
+                                <p class="card-text">Average Mark: {{ rec.average }} %</p>
+                                <p class="card-text">Lecturer: {{ rec.coordinator }}</p>
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                        <p class="card-text"><b>Course Summary:</b> {{ rec.summary }} </class>
+                        <p class="card-text">DRPS: <a href="{{ rec.url }}">{{ rec.url }}</a></p>
+
+                        {% if not rec.feedback == "Not Available" %}
+                            <!-- MODAL-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                <a> View Feedback </a>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalLabel">
+
+                                <div class="modal-dialog" role="document">
+
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">{{ rec.name }} Feedback </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            {% for f in rec.feedback %}
+                                                <ul class="list-group">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    {{ f }}
+                                                </li>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary">
+                                <a> Feedback Unavailable </a>
+                            </button>
+                        {% endif %}
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
+
+</body>
+</html>

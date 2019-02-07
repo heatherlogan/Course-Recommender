@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Inf Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+   {% include 'navbar.html' %}
+   {% block content %}
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container" align="center">
+
+        <h1 style="padding-top:150px; padding-bottom: 50px; font-size: 75px">Inf Search</h1>
+
+          <hr class="star-light">
+      </div>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <div class="container" style="padding-top: 50px">
+      <div class="row">
+        <div class="col-lg-6 col-md-10 mx-auto" align="center">
+          <div class="post-preview">
+              <h1 style="padding:20px">
+                Search Engine
+              </h1>
+              <h4 style="padding:30px; color:#fff">
+                Search through all Edinburgh Informatics courses by name, area and level
+              </h4>
+          </div>
+          <!-- Pager -->
+          <div>
+              <a href="/search"><button type="button" class="btn btn-primary btn-lg btn-block">Go</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-10 mx-auto" align="center">
+          <div class="post-preview">
+              <h1 style="padding:20px">
+                Course Recommender
+              </h1>
+              <h4 style="padding:30px; color:#fff">
+                Find the Informatics courses suited to your interests and experience
+              </h4>
+          </div>
+          <!-- Pager -->
+          <div>
+              <a href="/recommend">
+              <button type="button" class="btn btn-primary btn-lg btn-block"
+                      style="background-color:#DF691A" href="/recommend">Go</button></a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <hr>
+
+
+    <!-- Footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/clean-blog.min.js"></script>
+
+
+  {% endblock content %}
+
+  </body>
+
+</html>
