@@ -1,4 +1,4 @@
-NOTE: The files should be compatible with Python 3.4+, but the files were initially created using Python 2.7
+NOTE: The files were created using Python 3.7 and should be run using this version
 
 ## Libraries
 The web scraper uses 'Scrapy' Library. If you are using conda environment, you can use:
@@ -7,14 +7,11 @@ or directly via PyPI with:
 > pip install Scrapy
 
 
-
 ## Running the scraper
 
 To run the scraper, first go to directory '/scraper/', then, using terminal, type in:
 > scrapy crawl informatics -o informatics.json
 This will crawl the informatics website('https://course.inf.ed.ac.uk/') and store the collected data inside informatics.json file. 
-
-
 
 
 ## PDFs
@@ -26,8 +23,6 @@ These files are all ready to use and we have also prepared a file 'labels.txt'. 
 
 This will produce an output 'course_data.json' which is being used by the recommender and the search engine. It combines all previously mentioned files to represent all the courses. 
 
-
-
 \* To get pdftotext, ensure you have gcc installed. If not, on command line:
 
 > brew install gcc
@@ -35,10 +30,12 @@ This will produce an output 'course_data.json' which is being used by the recomm
 > pip install pdftotext
 
 Pdfminer is more straighforward:
-> pip install pdfminer
+> pip install pdfminer3k
 
-Same follows for bs4:
-> pip install beautifulsoup4
+Same follows for remaining libraries:
+> pip install bs4
+> pip install textblob 
+> pip install requests
 
 
 To run the scraper for average score PDF file, 'course_result_summary.pdf', on terminal:
@@ -46,4 +43,4 @@ To run the scraper for average score PDF file, 'course_result_summary.pdf', on t
 
 It will produce 'average.txt' file.
 
-To run the scraper for the feedback PDF file, 
+To run the scraper for the feedback PDF file, as well as to get the 

@@ -1,11 +1,13 @@
 import sys
 import json
 
-keys = {1:'courseName', 2:'EUCLID Code', 3:'Course URL', 4:'Acronym', 5:'Level', 6:'Points', 
-    7:'Year', 8:'Delivery', 9:'Exam Diet', 10:'Work%/Exam%', 11:'Lecturer(s)/Coordinator(s)', 
+keys = {1:'courseName', 2:'EUCLID Code', 3:'Course URL', 
+    4:'Acronym', 5:'Level', 6:'Points', 7:'Year', 8:'Delivery',
+    9:'Exam Diet', 10:'Work%/Exam%', 11:'Lecturer(s)/Coordinator(s)', 
     12:'Summary', 13:'Description',  99:['AI', 'CG', 'CS', 'SE'], }
 
 def main():
+    # all the separate files to be combined
     informatics_file = './scraper/informatics.json'
     with open(informatics_file) as f:
         courses = json.load(f)
@@ -23,7 +25,8 @@ def main():
     with open(labels_file) as f:
         labels = f.read().strip().split('\n')
     
- 
+    # created new dictionary that will store all of 
+    # the above details in one place
     inf_codes = dict()
     course_dict = {'courses':[]}
     for i, course in enumerate(courses):
@@ -51,12 +54,14 @@ def main():
         inf_codes[temp_dict['Code']] = i
         course_dict['courses'].append(temp_dict)
     
+    # for additional details first we check if the INF course is 
+    # in dictionary and then we assign the value
+    # not all courses have these additional fields, like feedback
     for feed in feedback:
         key_to_chek = list(feed.keys())[0]
         if key_to_chek in inf_codes.keys():
            num = inf_codes[key_to_chek]
            course_dict['courses'][num]['Feedback'] = feed[key_to_chek]
-
 
     for avg in avgs:
         key_to_chek, score = avg.split()       
@@ -70,10 +75,11 @@ def main():
            num = inf_codes[key_to_chek]
            course_dict['courses'][num]['Area'] = label
 
+    
     # print all data in pretty .json format
     with open('course_data.json', 'w') as fp:
         json.dump(course_dict, fp, indent=4)
     
-              
+          
 if __name__ == '__main__':
     main()
