@@ -64,20 +64,15 @@ def main():
            num = inf_codes[key_to_chek]
            course_dict['courses'][num]['Average'] = score
 
-    test_set_la = set()
-    test_code = set()
     for label in labels:
         key_to_chek, label = label.split('\t') 
-        test_set_la.add(label)
         if key_to_chek in inf_codes.keys():
            num = inf_codes[key_to_chek]
            course_dict['courses'][num]['Area'] = label
 
-    print(test_set_la)
     # print all data in pretty .json format
-    with open('course_data.json', 'w') as f:
-        print(json.dumps(course_dict, indent=4), file=f)
-
+    with open('course_data.json', 'w') as fp:
+        json.dump(course_dict, fp, indent=4)
     
               
 if __name__ == '__main__':
