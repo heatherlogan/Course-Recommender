@@ -43,4 +43,6 @@ To run the scraper for average score PDF file, 'course_result_summary.pdf', on t
 
 It will produce 'average.txt' file.
 
-To run the scraper for the feedback PDF file, as well as to get the 
+To run the scraper for the feedback PDF file, as well as to evaluate it for polarity and subjectivity, run:
+> python pdf-downloader.py
+> python TextBlob_analysis.py
