@@ -6,6 +6,8 @@ keys = {1:'courseName', 2:'EUCLID Code', 3:'Course URL',
     9:'Exam Diet', 10:'Work%/Exam%', 11:'Lecturer(s)/Coordinator(s)', 
     12:'Summary', 13:'Description',  99:['AI', 'CG', 'CS', 'SE'], }
 
+output_file = '../website/json_files/course_data.json'
+
 def main():
     # all the separate files to be combined
     informatics_file = './scraper/informatics.json'
@@ -77,7 +79,7 @@ def main():
 
     
     # print all data in pretty .json format
-    with open('course_data.json', 'w') as fp:
+    with open(output_file, 'w') as fp:
         json.dump(course_dict, fp, indent=4)
     
           
