@@ -18,6 +18,8 @@ This will crawl the informatics website(https://course.inf.ed.ac.uk/) and store 
 ## PDF Scraper
 To scrape the PDF files, we used 'pdftotext' and 'pdfminer' libraries, as well as BeautifulSoup4.* The produced files are 'feedback.json' and 'average.txt' respectively. 
 
+Another file, 'course_evaluation.json', also contains polarity and subjectivity scores of each course by using their feedback.
+
 These files are all ready to use and we have also prepared a file 'labels.txt'. This includes every course labelled with an appropriate area of interest. It was done manually and would need to be maintained by an administration or someone looking after the system. To combine all these files make sure you are in 'course_scraping/' folder and run:
 > python course_builder.py
 
